@@ -1,4 +1,4 @@
-// PAACKAGES AND REACT DEPENDENCIES
+// PACKAGES AND REACT DEPENDENCIES
 
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -62,7 +62,6 @@ function SongDetails() {
           </div>
         </div>
       </article>
-      {/* <Reviews /> */}
     </div>
   );
 }

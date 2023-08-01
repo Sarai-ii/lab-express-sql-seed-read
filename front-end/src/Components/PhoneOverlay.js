@@ -32,9 +32,11 @@ const PhoneOverlay = () => {
             <div className="status-bar" /> 
             <div className="screen">
                 <div className='screen-heading row'>
-                    <ul className='col screen-heading'>
-                        <br />
+                    <ul className=' time-box'>
+                        {/* <br /> */}
                         <li className='heading-text'>{formattedTime}</li>
+                    </ul>
+                    <ul className='icon-container'>
                         <li>
                             <svg xmlns="" width="16" height="16" fill="white" 
                                 className="heading-text bi bi-wifi" 

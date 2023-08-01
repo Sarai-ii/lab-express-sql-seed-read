@@ -23,6 +23,11 @@ li>svg {
   margin: 13px;
   
 }
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 50px;
+}
 
 .btn-text {
   color: white;
@@ -81,11 +86,22 @@ li>svg {
   align-content: end;
   background-color: black;
   display: flex;
-  height: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap ;
+  /* width: 50%; */
+
+  height: 40px;
+  /* justify-content: space-between ; */
 }
 
 .screen-main {
   margin: 20px 0 10px 0;
+}
+
+.time-box {
+  font-size: 13px;
+  padding: 2px 0 0 10px;
+  width: 50%;
 }
 
 /* STATUS BAR */
