@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(0, 0, 4);
+    color: whitesmoke;
+}
+
+.card-details {
+    align-items: center;
+    border: 2px solid;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+.button-details{
+    border-color:rgb(0, 0, 4);
+    color: aliceblue;
+    margin: 10px;
+}

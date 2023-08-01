@@ -1,0 +1,112 @@
+/* MAIN SCREEN */
+.phone-overlay {
+  /* animation-name: square; */
+  /* animation-duration: 1s; */
+  background-color: #000000e7;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(221, 204, 204, 0.745);
+  height: 700px; /* iPhone 14 Pro Max height */
+  position: relative;
+  overflow: scroll;
+  width: 375px; /* iPhone 14 Pro Max width */
+}
+li {
+  list-style: none;
+}
+li>svg {
+  margin: 0 100px 0 0;
+  /* text-align: right; */
+}
+.heading-text {
+  font-family: monoserrat;
+  justify-content: space-around;
+  margin: 13px;
+  
+}
+
+.btn-text {
+  color: white;
+}
+
+.pool, .workout, .romantic{
+  /* background-color: #000; */
+  border: 2px solid rgb(88, 83, 83);
+  color: rgb(255, 251, 251);
+  font-family: Oswald;
+  font-weight: 400;
+  /* padding: 1px; */
+  text-align: center;
+}
+
+/* .playlists-icon {
+  position: relative;
+  animation-name: square;
+  animation-duration: 3s;
+  text-align: center; 
+} */
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: #af9797; */
+  background: linear-gradient(
+    to bottom,
+    #8d7878 10%,
+    #af9797 50%,
+    rgba(3, 1, 9, 0.695) 90%,
+    rgb(220, 204, 204) 100%
+  );
+  border-radius: 22px;
+  margin: 5px 0 0 0;
+  overflow: scroll;
+  box-shadow: 0 4px 12px rgba(27, 27, 27, 0.745);
+}
+   
+.screen-btn {
+  background-color: rgb(8, 13, 18);
+  border: 0px solid white;
+  display: inline;
+  color: white;
+  margin: 0 0 0 1px;
+  padding: 5px 5px 0 0;
+  text-align: end;
+  width: 70px;
+}
+
+.screen-btn-text {
+  padding-left: 25px;
+}
+
+.screen-heading {
+  align-content: end;
+  background-color: black;
+  display: flex;
+  height: 20px;
+}
+
+.screen-main {
+  margin: 20px 0 10px 0;
+}
+
+/* STATUS BAR */
+.status-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: #000;
+}
+
+/* HOME INDICATOR */
+.home-indicator {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+}
+  

@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+  }
+.footer-text {
+    font-weight: 400;
+    color: black;
+    /* box-shadow: 0 4px 12px rgba(27, 27, 27, 0.745); */
+}
+.footer ul {
+    list-style: none;
+    /* margin: %; */
+}

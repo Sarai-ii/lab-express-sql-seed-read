@@ -1,11 +1,16 @@
+// PAACKAGES AND REACT DEPENDENCIES
+
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-// import Reviews from "./Reviews";
+
+//STYLING
+import "../Css/Show.css"
 
 const API = process.env.REACT_APP_API_URL;
 
 function SongDetails() {
+
   const [song, setSong] = useState([]);
   let { id } = useParams();
   let navigate = useNavigate();
@@ -30,32 +35,35 @@ function SongDetails() {
   };
 
   return (
-    <>
-      <article>
+    <div className="">
+      <article className="card card-details text-center bg-dark grey ">
         <h3>
           {song.is_favorite ? <span>⭐️</span> : null} {song.name} by {song.artist}
         </h3>
         <h4>{song.album}</h4>
         <h6>Time: {song.time}</h6>
         <div className="showNavigation">
-          <div>
+          <div className="">
             {" "}
             <Link to={`/songs`}>
-              <button>Back</button>
+              <button className="btn btn-outline-secondary button-details">Back</button>
             </Link>
           </div>
           <div>
             <Link to={`/songs/${id}/edit`}>
-              <button>Edit</button>
+              <button className="btn btn-outline-secondary button-details">Edit</button>
             </Link>
           </div>
-          <div>
-            <button onClick={handleDelete}>Delete</button>
+          <div className="">
+            <button
+              className="btn btn-outline-secondary button-details "
+              onClick={handleDelete}>Delete
+            </button>
           </div>
         </div>
       </article>
       {/* <Reviews /> */}
-    </>
+    </div>
   );
 }
 export default SongDetails;

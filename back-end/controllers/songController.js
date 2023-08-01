@@ -9,6 +9,10 @@ const {
 } = require("../queries/songs");
 const { checkNameAndArtist, checkBoolean } = require("../validations/checkSongs.js");
 
+// PLAYLISTS ROUTE
+const playlistController = require("./playlistController")
+songs.use("/:songsId/playlists", playlistController)
+
 // INDEX
 songs.get("/", async (req, res) => {
     const allSongs = await getAllSongs();

@@ -21,7 +21,7 @@ function SongEditForm() {
       .put(`${API}/songs/${id}`, updatedSong)
       .then(
         () => {
-          navigate(`${API}/songs/${id}`);
+          navigate(`/songs/${id}`);
         },
         (error) => console.error(error)
       )
@@ -74,7 +74,7 @@ function SongEditForm() {
           type="text"
           name="album"
           value={song.album}
-          placeholder="Name of album"
+          placeholder="Name of Album"
           onChange={handleTextChange}
         />
         <label htmlFor="time">Time:</label>
@@ -93,9 +93,10 @@ function SongEditForm() {
           checked={song.is_favorite}
         />
         <br />
-
         <input type="submit" />
+
       </form>
+      
       <Link to={`/songs/${id}`}>
         <button>Nevermind!</button>
       </Link>
